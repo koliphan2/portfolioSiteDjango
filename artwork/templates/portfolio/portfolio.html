@@ -1,0 +1,41 @@
+{% extends "baseIndex.html" %}
+  
+{% block content %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/portfolioStyle.css' %}" />
+
+    <div class="image-grid">
+        <p id='instructions'>
+            Click on an image to find out more about it.
+        </p>  
+        {% if image_list %} 
+            {% regroup image_list by get_medium_display as medium_list %}
+            {% for medium in medium_list %}
+                <div class="pictureClass">
+                    <h3>{{ medium.grouper }}</h3>
+                        {% if medium.list %}
+                            {% for image in medium.list %}
+                                <div class="pictures">
+                                    <ul>
+                                        <div class="singlePicture">
+                                            <li>
+                                                {{ image.image_tag }}
+                                                <p class="notes">
+                                                    {{image.description}} 
+                                                    <br> 
+                                                    {{image.pub_date}}
+                                                </p>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <p>No pictures are available.</p>
+                        {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

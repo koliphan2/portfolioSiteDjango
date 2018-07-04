@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(199, 226, 207);
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color:rgb(199, 226, 207); 
+}
+
+.title{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px inset rgba(0, 0, 0, 0.2);
+    position: static;
+    margin-top: 13px;
+    bottom: 0%;
+}
+
+
+#name{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+ ul.menu{
+    width: 100%;
+    min-width: 1000px;
+    padding:10px;
+    list-style-type: none;
+    align-content: center;
+    height: 50px;
+
+}
+li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+li.mini-menu{
+    /*when window is 850px wide it needs to stop*/
+    min-width: 600px;
+    position: absolute;
+    right: 0;
+    max-width: 70%;
+    margin-top: 10px;
+}
+
+li .mini-menu{
+    max-width: 100%;
+    float: right;
+    list-style-type: none;
+}
+
+.mini-menu a:hover{
+    font-size: 23px;
+}
+
+#symbol {
+    margin: -10px;
+    margin-top: -5px;
+    height: 60px;
+    width: auto;
+}
+
+.block{
+    margin: 5px;
+    margin-left: 70px;
+    margin-right:70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(199, 226, 207);
+
+    border: 2px inset rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a{
+    text-decoration-line:none;
+    text-decoration-color: black;
+}
+a:visited{
+    text-decoration-color: black
+}

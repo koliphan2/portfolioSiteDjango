@@ -1,0 +1,62 @@
+
+
+li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.image-grid{
+    display: grid;
+    margin: 20px;
+    grid-gap: 10px;
+    grid-template-rows: 25 25 25 25;
+}
+
+.pictureClass{
+    font-family: fantasy;
+    font-size: 20px;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px inset rgba(0, 0, 0, 0.2);
+}
+
+.pictures{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+.pictures img{
+    border: 2px inset rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 300px;;
+
+    
+}
+
+.singlePicture{
+    list-style-type: none;
+}
+
+.singlePicture:active .notes{
+    position: absolute;
+    text-align: left;
+    background-color:  rgb(199, 226, 207);
+    border: 2px inset rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    display: block;
+}
+
+
+.singlePicture #title{
+    margin: 5px;
+}

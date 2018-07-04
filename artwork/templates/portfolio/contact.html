@@ -1,0 +1,53 @@
+{% extends "baseIndex.html" %}
+  
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/contactStyle.css' %}" />
+  
+        
+<section>
+    <aside>
+        <div class="simpleBorder">
+            <img src="{% static 'images' %}/{{ contactPicture }}" alt="profile picture">
+            <br>
+            <br>
+            <a href="https://github.com/koliphan2">gitHub</a>
+            <br>
+            <a href="https://www.instagram.com/katherineoliphant/">Instagram</a>
+            <br>
+            KatherineOliphant132@gmail.com
+        </div>
+    </aside>
+    <article>
+        <div class="title">Contact Me</div>
+        <p class="simpleBorder">{{ contactMessage }}</p>
+        <div id="contact">
+            <form id="contact-form"action="https://formspree.io/katherine.oliphant132@gmail.com"
+                method="POST" >
+                <div class="formBox">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="First Name">
+                </div>
+                <div class="formBox">
+                    <label class="formLabels" for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="Last Name">
+                </div>
+                <div class="formBox">
+                    <label class="formLabels" for="email">Email Address: </label>
+                    <input type="email" id="email" name="Email">
+                </div>
+                <div class="formBox">
+                    <label for="comment">Message:</label>
+                    <br>
+                    <textarea rows="6" cols="50" name="comment" form="contact-form"></textarea>
+                </div>
+                <div class="formBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </article>
+</section>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+         
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'headerStyle.css' %}" />
+
+        <title>Katie Oliphant</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="header">
+                    <ul class="menu">
+                        <li><img id="symbol" src="{% static 'images/SymbolColor.png' %}" alt="symbol"></li>
+                        <li><p id="name">Katie Oliphant</p></li>
+                        <li class="mini-menu">
+                            <ul class="mini-menu">
+                                <li><a class="main" href="/">Home</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <span>Portfolio</span>
+                                        <div class="dropdown-content">
+                                            <a href="/portfolio">Full Pieces</a>
+                                            <a href="/sketchbook">Sketchbook</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        Katie Oliphant - L'artiste Fanée  
+    </footer>
+</html>
+ 
+ 

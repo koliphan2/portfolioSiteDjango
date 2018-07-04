@@ -1,0 +1,74 @@
+
+.main{
+  width: 100%;
+}
+
+p{
+    text-align: left;
+    line-height: 25px;
+}
+
+
+
+
+
+img {
+    width: 130%;
+    height: 80%;
+}
+
+.container{
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+
+    max-height: 260px;
+}
+
+
+#name{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+.quotePic{
+    grid-column: span 12;
+    grid-row-start: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.quoteHolder{
+    margin: -8px;
+    grid-area: main;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 400px;
+}
+
+.words{
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 3vmax;
+    font-family: fantasy;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px inset rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+
+a:link{
+    text-decoration-style: none;
+    text-decoration-color: white;
+    text-decoration-line: none;
+}

@@ -1,0 +1,19 @@
+{% extends "bootStrapBase.html" %}
+  
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/indexStyle.css' %}" />
+   
+
+<div class="main">
+        <div class="quotePic">
+            <div class="quoteHolder">
+                <img class="background" src="{% static 'images/SunsetUtahSkinny.jpg' %}" alt="sunset">
+                <div class="words"><strong>{{ WelcomeMessage }}</strong> <br><br>
+                    {{ quote }}
+                <br> <em>-{{ author }}</em></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "baseIndex.html" %}
+  
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/aboutStyle.css' %}" />
+  
+
+<section>
+    <aside>
+        <div class="simpleBorder">
+            <img id="aboutMePic" class="about" src="{% static 'images' %}/{{ profilePicture }}" >
+        </div>
+    </aside>
+    <article>
+        <div class="title">Get to Know Me</div>
+        <div id="aboutMe">
+            <p id="aboutMeWords">{{ Biography }}</p>
+        </div>
+    </article>
+</section>
+
+{% endblock %}
