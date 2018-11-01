@@ -3,7 +3,7 @@ from .models import Artpiece, webContent
 
 
 class ArtpieceAdmin(admin.ModelAdmin):
-    fields = ['title','image_tag', 'image', 'medium', 'create_date', 'description']
+    fields = ['title', 'image_tag', 'image', 'medium', 'create_date', 'description']
     readonly_fields = ['image_tag']
 
 

@@ -1,0 +1,96 @@
+{% extends "bootStrapBase.html" %}
+
+{% block content %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/portfolioStyle.css' %}" />
+
+    <div class="container" id="wholeContainer">
+        {% if image_list %}
+            {% regroup image_list by get_medium_display as medium_list %}
+
+            {% for medium in medium_list %}
+                <div class="row">
+                    <div class="container">
+                        <div class="title">{{ medium.grouper }}</div>
+                        {% if medium.list %}
+                            <div class="row justify-content-start">
+                                {% for image in medium.list %}
+                                    <div class="col-md-3">
+                                    <a class="picture">
+                                        {% if '.mp4' in image.image_tag or '.mov' in image.image_tag %}
+                                            <video id="{{ image.title }}" controls muted>
+                                              <source src="{{ image.image_tag }}" type="video/mp4">
+                                              Your browser does not support HTML5 video.
+                                            </video>
+                                        {% else %}
+                                            <img src="{{ image.image_tag }}" class ="hover-shadow" id="{{ image.title }}">
+                                        {% endif %}
+                                    </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="row">No pictures are available.</div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    {% for image in image_list %}
+        <div id="{{ image.title }}_modal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-body">
+                   {% if '.mp4' in image.image_tag or '.mov' in image.image_tag %}
+                       <video src="{{ image.image_tag }}"controls muted autoplay></video>
+                   {% else %}
+                       <img src="{{ image.image_tag }}">
+                   {% endif %}
+                </div>
+                <div class="modal-footer">
+                    <p>
+                    {{image.description}}
+                        <br>
+                    <i>{{ image.create_date }}</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    <script>
+        $(document).ready(function(){
+
+            function getModal(target){
+                var title = target.id;
+                var full_title = title + '_modal';
+                var modal =  document.getElementById(full_title);
+                if(modal.childNodes[3].childNodes[1].childNodes[1]){
+                    var video = modal.childNodes[3].childNodes[1].childNodes[1];
+                    console.log(video);
+                    if(video.duration < 10){
+                        video.setAttribute('loop','true');
+                    }
+                }
+                  //  if(modal.duration < 15){
+                    //    modal.style.
+                    //}
+               // }
+                modal.style.display = "block";
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks anywhere outside of the modal, close it
+
+                window.onclick = function(event) {
+                    if (event.target === modal) {
+                         modal.style.display = "none";
+                    }
+                }
+            }
+
+            $(".picture").click(function(event){getModal(event.target); return false; });
+        });
+    </script>
+
+{% endblock %}

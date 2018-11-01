@@ -1,4 +1,4 @@
-{% extends "baseIndex.html" %}
+{% extends "bootStrapBase.html" %}
   
 {% block content %}
 
@@ -15,7 +15,7 @@
     <article>
         <div class="title">Get to Know Me</div>
         <div id="aboutMe">
-            <p id="aboutMeWords">{{ Biography }}</p>
+            <p id="aboutMeWords">{{ Biography|linebreaks }}</p>
         </div>
     </article>
 </section>

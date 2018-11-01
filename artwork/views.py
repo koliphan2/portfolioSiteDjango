@@ -12,7 +12,7 @@ def home(request):
    
     content = webContent()
     context = content.getDictionary()
-    return render(request, 'portfolio/index.html', context)
+    return render(request, 'portfolio/home.html', context)
 
 def sketchbook(request):
     return HttpResponse("This is the sketchbook page.")
@@ -29,8 +29,8 @@ def contact(request):
     return render(request, 'portfolio/contact.html', context)
 
 
-class portfolioView(generic.ListView):
-    template_name = 'portfolio/portfolio.html'
+class PortfolioView(generic.ListView):
+    template_name = 'portfolio/bootStrapPortfolio.html'
     context_object_name = 'image_list'
     model = Artpiece
     

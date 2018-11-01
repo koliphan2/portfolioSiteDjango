@@ -3,7 +3,7 @@ from .models import webContent
 
 # Model Functions
 def getDictionary(propertyName=None):
-        # deal with proerty name if added
+        # deal with property name if added
         allObjects = webContent()
         dictionary = {}
         for obj in allObjects.objects.filter():

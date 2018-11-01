@@ -28,10 +28,9 @@ class webContent(models.Model):
             return singleObject
 
 
-
-
 class Artpiece(models.Model):
     # id is automatically added as a primary key with an incrementing number
+
     # title
     title = models.CharField(max_length=200)
 
@@ -43,11 +42,11 @@ class Artpiece(models.Model):
         )
 
     # medium of artpiece
-
     medium_choices = (
         ('drawing', 'Drawings'),
         ('paint', 'Paintings'),
         ('digital', 'Digital Artwork'),
+        ('animation', 'Animation')
     )
 
     medium = models.CharField(
@@ -64,7 +63,7 @@ class Artpiece(models.Model):
     description = models.TextField()
 
     def image_tag(self):
-        return mark_safe('<img src="{}/{}" height = 200px />'.format(settings.MEDIA_URL, self.image))
+        return mark_safe("{}/{}".format(settings.MEDIA_URL, self.image))
 
     image_tag.short_description = "Image"
     

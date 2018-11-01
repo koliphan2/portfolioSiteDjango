@@ -9,6 +9,24 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     background-color:rgb(199, 226, 207); 
 }
 
+
+.dropdown-menu.show{
+    background-color: #9cb9a1;
+    text-align: center;
+}
+.dropdown-item{
+    margin-right: 50px;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 96%;
+    margin-left: 2%;
+    padding-top: 10px;
+    color: lightgray;
+}
+
 .title{
     font-family: fantasy;
     font-weight: bold;
@@ -26,8 +44,9 @@ footer{
 
 #name{
     font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-family: fantasy;
 }
 
  ul.menu{
@@ -45,6 +64,10 @@ li{
     margin-right: 10px;
     font-family: fantasy;
     font-size: 20px;
+}
+
+li.hover{
+    color: lightgray;
 }
 
 li.mini-menu{
@@ -67,8 +90,9 @@ li .mini-menu{
 }
 
 #symbol {
-    margin: -10px;
     margin-top: -5px;
+    margin-left: -5px;
+    margin-bottom: 3px;
     height: 60px;
     width: auto;
 }
