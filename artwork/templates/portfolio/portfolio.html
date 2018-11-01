@@ -10,8 +10,7 @@
             Click on an image to find out more about it.
         </p>  
         {% if image_list %}
-            {{ image_list }}
-            {% regroup image_list|dictsort:image_list.medium by get_medium_display as medium_list %}
+            {% regroup image_list by get_medium_display as medium_list %}
             {{ medium_list }}
             {% for medium in medium_list %}
                 <div class="pictureClass">

@@ -55,7 +55,6 @@ class Artpiece(models.Model):
         default='drawing'
     )
 
-
     # actual image address
     image = models.FileField("Image File", upload_to="uploads/")
 
@@ -66,7 +65,6 @@ class Artpiece(models.Model):
         return mark_safe("{}/{}".format(settings.MEDIA_URL, self.image))
 
     image_tag.short_description = "Image"
-    
 
     # toString of Model
     def __str__(self):
