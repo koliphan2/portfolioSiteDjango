@@ -4,4 +4,6 @@
 
 artwork/__pycache__
 
+artwork.sqlite3
+
 static/images/uploads
