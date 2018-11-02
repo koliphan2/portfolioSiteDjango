@@ -2,6 +2,6 @@
 
 .vscode
 
-artwork/_pychache_
+artwork/__pycache__
 
 static/images/uploads
