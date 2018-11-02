@@ -21,11 +21,13 @@ li{
     border: 2px inset rgba(0, 0, 0, 0.2);
 }
 
-.pictures{
+.picture{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    margin: 10px;
     grid-column-gap: 20px;
     grid-row-gap: 25px;
+    height: 200px;
+    width: 200px;
 }
 
 .picture img{
@@ -33,7 +35,8 @@ li{
     display: inline-block;
     cursor: pointer;
     max-height: 200px;
-    margin: 10px;
+    max-width: 200px;
+    object-fit: cover;
 }
 
 .picture video{
@@ -41,7 +44,8 @@ li{
     display: inline-block;
     cursor: pointer;
     max-height: 200px;
-    margin: 10px;
+    max-width: 200px;
+    object-fit: cover;
 }
 
 .singlePicture{
@@ -92,7 +96,8 @@ li{
 }
 
 #wholeContainer{
-    width: 100vw;
+    width: 98vw;
+    margin-left: 4vw;
 }
 
 .modal-content {

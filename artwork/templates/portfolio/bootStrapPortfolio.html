@@ -7,7 +7,7 @@
 
     <div class="container" id="wholeContainer">
         {% if image_list %}
-            {% regroup image_list by get_medium_display as medium_list %}
+            {% regroup image_list|dictsort:'medium' by get_medium_display as medium_list %}
 
             {% for medium in medium_list %}
                 <div class="row">
@@ -17,7 +17,7 @@
                             <div class="row justify-content-start">
                                 {% for image in medium.list %}
                                     <div class="col-md-3">
-                                    <a class="picture">
+                                    <div class="picture">
                                         {% if '.mp4' in image.image_tag or '.mov' in image.image_tag %}
                                             <video id="{{ image.title }}" controls muted>
                                               <source src="{{ image.image_tag }}" type="video/mp4">
@@ -26,7 +26,7 @@
                                         {% else %}
                                             <img src="{{ image.image_tag }}" class ="hover-shadow" id="{{ image.title }}">
                                         {% endif %}
-                                    </a>
+                                    </div>
                                     </div>
                                 {% endfor %}
                             </div>
