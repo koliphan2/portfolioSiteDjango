@@ -1,0 +1,7 @@
+.DS_STORE
+
+.vscode
+
+artwork/_pychache_
+
+static/images/uploads
