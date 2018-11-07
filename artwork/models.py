@@ -56,7 +56,7 @@ class Artpiece(models.Model):
     )
 
     # actual image address
-    image = models.FileField("Image File", upload_to='media')
+    image = models.FileField("Image File", upload_to='uploads')
 
     # description and extra notes
     description = models.TextField()
