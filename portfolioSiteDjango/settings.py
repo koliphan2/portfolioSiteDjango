@@ -100,6 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+FILE_UPLOAD_PERMISSIONS = 0o644
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
