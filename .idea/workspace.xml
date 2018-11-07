@@ -106,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolioSiteDjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="125" column="49" selection-start-line="125" selection-start-column="49" selection-end-line="125" selection-end-column="49" />
+            <state relative-caret-position="181">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -138,7 +138,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artwork/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
@@ -207,6 +207,7 @@
       <find>_id</find>
       <find>get</find>
       <find>image_list</find>
+      <find>allow</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -251,8 +252,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="3" />
     <option name="y" value="23" />
-    <option name="width" value="604" />
+    <option name="width" value="997" />
     <option name="height" value="723" />
   </component>
   <component name="ProjectView">
@@ -359,10 +361,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="604" height="723" extended-state="0" />
+    <frame x="3" y="23" width="997" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03202847" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.107853405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -594,16 +596,6 @@
     <entry file="file://$PROJECT_DIR$/artwork/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/artwork/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artwork/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -619,8 +611,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolioSiteDjango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="125" column="49" selection-start-line="125" selection-start-column="49" selection-end-line="125" selection-end-column="49" />
+        <state relative-caret-position="181">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artwork/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

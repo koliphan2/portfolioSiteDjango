@@ -126,8 +126,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # root = where it is stored in a file system
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/uploads')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # url = what I want to use for a string location
-MEDIA_URL = "/static/images/uploads"
+MEDIA_URL = "/static/images"
 
