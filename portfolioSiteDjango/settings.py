@@ -121,12 +121,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # tells the location of where to find my static files
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # root = where it is stored in a file system
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/uploads')
 
 # url = what I want to use for a string location
-MEDIA_URL = "/static/images/uploads/"
+MEDIA_URL = "/static/images/uploads"
 
