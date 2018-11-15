@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a87ff0d0-6c24-42fa-ade8-a1d8ba2c952a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/artwork/templates/portfolio/animation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artwork/templates/portfolio/digital.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artwork/templates/portfolio/drawing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artwork/templates/portfolio/painting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artwork/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/artwork/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artwork/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/artwork/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artwork/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/artwork/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolioSiteDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolioSiteDjango/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artwork/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/artwork/utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +33,7 @@
         <counts>
           <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
@@ -49,7 +42,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,7 +70,7 @@
           <entry key="dummy" value="1" />
           <entry key="html" value="4023" />
           <entry key="js" value="543" />
-          <entry key="py" value="854" />
+          <entry key="py" value="1139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,7 +79,7 @@
           <entry key="HTML" value="4023" />
           <entry key="JavaScript" value="543" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="854" />
+          <entry key="Python" value="1139" />
         </counts>
       </usages-collector>
     </session>
@@ -118,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artwork/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -127,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artwork/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -148,11 +141,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artwork/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1542308914994" expanded="true" signature="365:558" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,7 +189,6 @@
         <option value="$PROJECT_DIR$/artwork/templates/portfolio/contact.html" />
         <option value="$PROJECT_DIR$/artwork/templates/portfolio/home.html" />
         <option value="$PROJECT_DIR$/artwork/admin.py" />
-        <option value="$PROJECT_DIR$/artwork/utilities.py" />
         <option value="$PROJECT_DIR$/artwork/templates/portfolio/scripting.js" />
         <option value="$PROJECT_DIR$/artwork/static/portfolio/scripting.js" />
         <option value="$PROJECT_DIR$/artwork/static/portfolio/homeStyle.css" />
@@ -211,6 +207,7 @@
         <option value="$PROJECT_DIR$/artwork/templates/portfolio/digital.html" />
         <option value="$PROJECT_DIR$/artwork/urls.py" />
         <option value="$PROJECT_DIR$/artwork/views.py" />
+        <option value="$PROJECT_DIR$/artwork/utilities.py" />
       </list>
     </option>
   </component>
@@ -227,9 +224,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="364" />
+    <option name="x" value="379" />
     <option name="y" value="23" />
-    <option name="width" value="916" />
+    <option name="width" value="901" />
     <option name="height" value="723" />
   </component>
   <component name="ProjectView">
@@ -237,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,28 +266,10 @@
               <item name="artwork" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="portfolioSiteDjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolioSiteDjango" type="462c0819:PsiDirectoryNode" />
-              <item name="artwork" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolioSiteDjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolioSiteDjango" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolioSiteDjango" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolioSiteDjango" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolioSiteDjango" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,10 +337,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="364" y="23" width="916" height="723" extended-state="0" />
+    <frame x="379" y="23" width="901" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21624714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24796274" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -552,9 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#643#675#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,22 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artwork/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artwork/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artwork/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,17 +580,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artwork/utilities.py">
+    <entry file="file://$PROJECT_DIR$/artwork/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artwork/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artwork/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/artwork/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -645,10 +615,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artwork/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artwork/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1542308914994" expanded="true" signature="365:558" ph="..." />
           </folding>
         </state>
       </provider>
