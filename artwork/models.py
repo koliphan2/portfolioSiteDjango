@@ -44,7 +44,7 @@ class Artpiece(models.Model):
     # medium of artpiece
     medium_choices = (
         ('drawing', 'Drawings'),
-        ('paint', 'Paintings'),
+        ('painting', 'Paintings'),
         ('digital', 'Digital Artwork'),
         ('animation', 'Animation')
     )
